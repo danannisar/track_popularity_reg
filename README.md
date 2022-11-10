@@ -49,18 +49,14 @@ These are the scripts i used:
 Firstly, make sure you already created AWS account and IAM user. Get security credentials and install AWS CLI. Connect to AWS with local machine by running `aws configure`. These steps can be followed by watching this [tutorial](https://github.com/alexeygrigorev/mlbookcamp-code/blob/master/course-zoomcamp/07-bentoml-production/06-production-deployment.md).
 
 1. Create Amazon Elastic Container Registry (ECR) repository. 
-<br>Click Get Started > General settings > Create repository
-<br>
+Click Get Started > General settings > Create repository
+
 2. Push our docker images in ECR using AWS CLI (Push syntax can be seen in **View push commands** button)
-<br>Click on the repo name > View push commands > follow the instructions and skip step 2 (because bentoml has been built)
-<br>
-<br>
+Click on the repo name > View push commands > follow the instructions and skip step 2 (because bentoml has been built)
 After the docker images pushed 
-<br>
-<br>
+
 ![ECR_repo](images/ECR-rep.png)
-<br>
-<br>
+
 3. Find ECS (Elastic Container Service) in AWS web. 
 <br>Create and Configure Cluster: Click Create Cluster > Networking only (CPU only) > follow the instructions.
 <br>
