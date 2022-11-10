@@ -77,7 +77,7 @@ From ECS dashboard > Clusters > select the cluster we just created > Tasks > Run
 
 
 ## Check Prediction Service via SwaggerUI
-Input to test the prediction service `localhost:3000` (local deployment) or `54.250.253.102:3000` (cloud deployment)
+Input to test the prediction service `localhost:3000` (local deployment) or [54.250.253.102:3000](54.250.253.102:3000) (cloud deployment)
 <br> then click execute:
 
 ```
