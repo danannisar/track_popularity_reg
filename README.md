@@ -58,28 +58,21 @@ After the docker images pushed
 ![ECR_repo](images/ECR-rep.png)
 
 3. Find ECS (Elastic Container Service) in AWS web. 
-<br>Create and Configure Cluster: Click Create Cluster > Networking only (CPU only) > follow the instructions.
-<br>
-<br>
-![ECS](images/create%20cluster%20in%20ECS.png)
-<br>
-<br>Create Task Definitions:
-<br>Click Create new Task Definition > FARGRATE > Task memory (0.5GB), Task CPU (0.25 vCPU) > Add container (follow instructions and paste the image URI of ECR repo into the Image section, also increase the Soft limit to 256 and set Port mappings to 3000) > create task
-<br>
-<br>
-![ECS](images/created%20task.png)
-<br>
-<br>
-<br>Run the Task:
-<br>From ECS dashboard > Clusters > select the cluster we just created > Tasks > Run new Task > follow instructions (also select Launch type FARGATE, Operating system family Linux, Security groups set custom tcp to 3000) > create Task
-<br>
-<br>
-![ECS](images/task%20running2.png)
-<br>
-<br>
-4. Find Public IP to test the service
-<br>
-<br>
+Create and Configure Cluster: Click Create Cluster > Networking only (CPU only) > follow the instructions.
+![ECS](images/create_cluster_in_ECS.png)
+
+4. Create Task Definitions:
+Click Create new Task Definition > FARGRATE > Task memory (0.5GB), Task CPU (0.25 vCPU) > Add container (follow instructions and paste the image URI of ECR repo into the Image section, also increase the Soft limit to 256 and set Port mappings to 3000) > create task
+
+![ECS](images/created_task.png)
+
+5. Run the Task:
+From ECS dashboard > Clusters > select the cluster we just created > Tasks > Run new Task > follow instructions (also select Launch type FARGATE, Operating system family Linux, Security groups set custom tcp to 3000) > create Task
+
+![ECS](images/taskrunning2.png)
+
+6. Find Public IP to test the service
+
 ![ECS](images/network.png)
 
 
