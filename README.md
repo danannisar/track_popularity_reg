@@ -51,7 +51,6 @@ Firstly, make sure you already created AWS account and IAM user. Get security cr
 1. Create Amazon Elastic Container Registry (ECR) repository. 
 <br>Click Get Started > General settings > Create repository
 <br>
-<br>
 2. Push our docker images in ECR using AWS CLI (Push syntax can be seen in **View push commands** button)
 <br>Click on the repo name > View push commands > follow the instructions and skip step 2 (because bentoml has been built)
 <br>
