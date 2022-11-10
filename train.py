@@ -192,7 +192,7 @@ X_full_train = dv.fit_transform(full_train_dicts)
 dicts_test = df_test[features].to_dict(orient='records')
 X_test = dv.transform(dicts_test)
 
-rf = RandomForestRegressor(n_estimators=100, max_depth=2, min_samples_leaf=50, random_state=1)
+rf = RandomForestRegressor(n_estimators=100, max_depth=2, min_samples_leaf=3, random_state=1)
 rf.fit(X_full_train, y_full_train)
 
 y_pred = rf.predict(X_test)
